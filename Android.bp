@@ -1,2 +1,9 @@
 soong_namespace {
 }
+
+prebuilt_hidl_interfaces {
+    name: "hidl_lge_nfc_interface",
+    interfaces: [
+        "vendor.lge.hardware.nfc@1.1::ILgeNfc_1_1",
+    ],
+}
