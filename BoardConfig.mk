@@ -14,9 +14,6 @@ include device/lge/joan-common/BoardConfigCommon.mk
 # Kernel
 TARGET_KERNEL_CONFIG := lineageos_l01k_defconfig
 
-# SELinux
-BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
-
 # VINTF
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
     $(DEVICE_PATH)/framework_compatibility_matrix.xml
