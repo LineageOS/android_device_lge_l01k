@@ -14,6 +14,10 @@ include device/lge/joan-common/BoardConfigCommon.mk
 # Kernel
 TARGET_KERNEL_CONFIG := lineageos_l01k_defconfig
 
+# Partition
+BOARD_SUPER_PARTITION_SIZE := 5863636992
+BOARD_QTI_DYNAMIC_PARTITIONS_SIZE := 5859442688 # (BOARD_SUPER_PARTITION_SIZE - 4194304) 4MiB overhead
+
 # SELinux
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 
